@@ -1,0 +1,11 @@
+AllCops:
+  Exclude:
+    - "**/*.gemspec"
+
+# GlobalVars:
+#   AllowedVariables:
+#     - $TRZR_PROCESS_MODE
+#     - $TRZR_LOG
+
+Layout/EndOfLine:
+  EnforcedStyle: lf

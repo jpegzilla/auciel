@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    httparty (0.21.0)
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    json (2.6.3)
+    mini_mime (1.1.2)
+    multi_xml (0.6.0)
+    tsurezure (0.0.34)
+      json (>= 2.3.0)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  httparty
+  tsurezure
+
+BUNDLED WITH
+   2.4.7
