@@ -2,6 +2,7 @@
 
 require 'httparty'
 require_relative './../constants/constants'
+require_relative './../utils/response_formatter'
 
 # form data for various requests
 module FormData
@@ -18,6 +19,7 @@ end
 module ItemEndpoints
   include Constants
   include FormData
+  include ResponseFormatter
 
   def self.send_post_request(uri, data)
     uri_params = URI.encode_www_form data
