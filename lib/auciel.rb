@@ -4,7 +4,7 @@ require 'tsurezure'
 require_relative './endpoints/item'
 
 # main class for bdomapi
-class BDOMAPI
+class Auciel
   include ItemEndpoints
 
   def initialize(port = 8888)

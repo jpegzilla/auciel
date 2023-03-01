@@ -1,5 +1,5 @@
-require_relative 'lib/bdomapi'
+require_relative 'lib/auciel'
 
-server = BDOMAPI.new
+server = Auciel.new
 
 server.listen

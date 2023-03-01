@@ -1,23 +1,26 @@
-# black desert market api
+# auciel
 
 this is a wrapper for the black desert central market api. the goal is to enable developers to get data from the market more easily.
 
 ## usage
 
 ### installing from rubygems
+
 _no gem yet_
 
 ### using source code
 
 ```ruby
-require 'lib/bdomapi'
+require 'lib/auciel'
 
 # default port is 8888
-server = BDOMAPI.new 8888
+server = Auciel.new 8888
 
 # server ready for requests at localhost:8888
 server.listen
 ```
+
+if you download this repo, you can also just run `ruby main.rb` and a server will start at `localhost:8888`.
 
 ## endpoints
 
@@ -50,3 +53,7 @@ GET https://localhost:8888/item/702
 }
 
 ```
+
+## other info
+
+auciel is the name of the central market director at old wisdom tree.
