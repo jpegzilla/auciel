@@ -34,9 +34,9 @@ you can also just run `ruby main.rb` in the root directory and a server will sta
 
 retrieves information about an item based on its id. equivalent to `GetWorldMarketSubList` in the raw api. example:
 
-```js
-GET https://localhost:8888/item/702
+`GET https://localhost:8888/item/702`
 
+```js
 {
   "data": [
     {
