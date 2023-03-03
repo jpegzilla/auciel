@@ -11,5 +11,5 @@ Gem::Specification.new do |s|
   s.files       = Dir['{lib}/**/*.rb', 'bin/*', 'LICENSE', '*.md', 'nodemon.json']
   s.homepage    = 'https://github.com/jpegzilla/auciel'
   s.license     = 'MIT'
-  s.add_runtime_dependency 'tsurezure', '>= 0.0.35'
+  s.add_runtime_dependency 'tsurezure', '>= 0.0.36'
 end
