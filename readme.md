@@ -1,6 +1,6 @@
 # auciel
 
-this is a wrapper for the black desert central market api. the goal is to enable developers to get data from the market more easily.
+auciel is a wrapper for the black desert central market api. its purpose is to enable developers to get data from the market more easily, without having to figure out the strict (and odd) request structures required for the raw central market api.
 
 ## usage
 
@@ -8,19 +8,25 @@ this is a wrapper for the black desert central market api. the goal is to enable
 
 _no gem yet_
 
+### executable
+
+_coming soon_
+
 ### using source code
 
+download this repo. then, in your ruby script:
+
 ```ruby
-require 'lib/auciel'
+require_relative 'path/to/lib/auciel'
 
 # default port is 8888
 server = Auciel.new 8888
 
-# server ready for requests at localhost:8888
+# server will be ready for requests at localhost:8888
 server.listen
 ```
 
-if you download this repo, you can also just run `ruby main.rb` and a server will start at `localhost:8888`.
+you can also just run `ruby main.rb` in the root directory and a server will start at `localhost:8888`.
 
 ## endpoints
 
