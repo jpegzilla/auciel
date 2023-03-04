@@ -1,4 +1,4 @@
-# auciel
+# auciel [![gem version](https://badge.fury.io/rb/auciel.svg)](https://badge.fury.io/rb/auciel)
 
 auciel is a wrapper for the black desert central market api. its purpose is to enable developers to get data from the market more easily, without having to figure out the strict (and odd) request structures required for the raw central market api.
 
