@@ -52,6 +52,13 @@ you can also just run `ruby main.rb` in the root directory and a server will sta
 
 ## endpoints
 
+1. [get item by id](#itemid)
+1. [get item by category](#itemcatsub)
+1. [search for an item](#searchqsearch-text)
+1. [get prices by item id](#pricesid)
+1. [get list of popular items](#hot)
+1. [get market waitlist](#waitlist)
+
 ### `/item/:id`
 
 retrieves information about an item based on its id. equivalent to `GetWorldMarketSubList` in the raw api. example:
