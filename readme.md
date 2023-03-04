@@ -8,7 +8,27 @@ built with the [tsurezure](https://github.com/jpegzilla/tsurezure) [![gem versio
 
 ### installing from rubygems
 
-_no gem yet_
+```ruby
+# gemfile
+
+source 'https://rubygems.org'
+
+gem 'auciel'
+```
+
+```ruby
+# script.rb
+
+require 'auciel'
+
+server = Auciel.new 8888
+
+server.listen
+```
+
+or
+
+`gem install auciel`
 
 ### executable
 
