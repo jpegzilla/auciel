@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-# rubocop:disable Lint/MissingCopEnableDirective, Metrics/MethodLength
-
+require 'date'
 require_relative './api_errors'
+
+# rubocop:disable Lint/MissingCopEnableDirective, Metrics/MethodLength
 
 # used to format responses from the black desert api
 module ResponseFormatter
@@ -86,7 +87,13 @@ module ResponseFormatter
     return try_error json if try_error json
 
     {
-      data: json['hotList'].map { |e| { **e, id: e['mainKey'] } }
+      data: json['hotList'].map do |e|
+        {
+          **e,
+          id: e['mainKey'],
+          fluctuationDirection: e['fluctuationType'] == 2 ? 'up' : 'down'
+        }
+      end
     }.to_json
   rescue NoMethodError, JSON::ParserError
     ApiErrors::UNEXPECTED_BLACK_DESERT_RESPONSE
@@ -103,7 +110,8 @@ module ResponseFormatter
         {
           **e,
           id: e['mainKey'],
-          waitEndTime: e['_waitEndTime'],
+          waitEndTime: DateTime.strptime(e['_waitEndTime'].to_s, '%Q'),
+          waitEndTimestampMs: e['_waitEndTime'],
           pricePerOne: e['_pricePerOne']
         }.except('_pricePerOne', '_waitEndTime')
       end
