@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name        = 'auciel'
-  s.version     = '0.0.1'
-  s.date        = '2023-02-28'
+  s.version     = '0.1.0'
+  s.date        = '2023-03-04'
   s.summary     = "this is a wrapper for black desert's marketplace api."
   s.description = 'an api used to get data from the black desert online central market.'
   s.authors     = ['jpegzilla']
