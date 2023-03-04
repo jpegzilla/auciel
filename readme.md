@@ -135,37 +135,39 @@ retrieves a list of items whose names match the provided **url encoded** search 
 
 retrieves a detailed price list for a specified item id. equivalent to `GetItemSellBuyInfo` in the raw api, and similar to `GetBiddingInfoList`. example:
 
-`GET http://localhost:8888/search?q=blood`
+`GET http://localhost:8888/prices/702`
 ```js
 {
   "data": {
     "pricePoints": [
-      11800,
-      11900,
-      12000,
-      12100,
-      12200,
-      12300,
-      12400,
-      12500,
-      12600,
-      12700
+      13500,
+      13600,
+      13700,
+      13800,
+      13900,
+      14000,
+      14100,
+      14200,
+      14300,
+      14400,
+      14500,
+      14600
     ],
     "buySellCounts": [
       {
         "sellCount": 0,
-        "buyCount": 500,
-        "pricePerOne": 11000
-      },
-      {
-        "sellCount": 0,
-        "buyCount": 500,
-        "pricePerOne": 11100
+        "buyCount": 0,
+        "pricePerOne": 12500
       },
       {
         "sellCount": 0,
         "buyCount": 0,
-        "pricePerOne": 11200
+        "pricePerOne": 12600
+      },
+      {
+        "sellCount": 0,
+        "buyCount": 0,
+        "pricePerOne": 12700
       },
 
     ...
