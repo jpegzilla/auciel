@@ -50,6 +50,28 @@ server.listen
 
 you can also just run `ruby main.rb` in the root directory and a server will start at `localhost:8888`.
 
+## specifying a region
+
+by default, this application will contact the na version of the central market. to change this, you can run auciel with an environment variable `BDO_AP_REGION` set to your desired region. if you're using the source code, you can go to `lib/constants.rb` and change `REGION` directly.
+
+here are the available values for `REGION` in `constants.rb` / the `BDO_AP_REGION` environment variable:
+
+`BDO_AP_REGION` setting | region market domain
+------------------------|---------------------------------------
+`na`                      | `na-trade.naeu.playblackdesert.com`
+`eu`                      | `eu-trade.naeu.playblackdesert.com`
+`eu_console`              | `eu-trade.console.playblackdesert.com`
+`na_console`              | `na-trade.console.playblackdesert.com`
+`asia_console`            | `asia-trade.console.playblackdesert.com`
+`sea`                     | `trade.sea.playblackdesert.com`
+`mena`                    | `trade.tr.playblackdesert.com`
+`kr`                      | `trade.kr.playblackdesert.com`
+`ru`                      | `trade.ru.playblackdesert.com`
+`jp`                      | `trade.jp.playblackdesert.com`
+`th`                      | `trade.th.playblackdesert.com`
+`tw`                      | `trade.tw.playblackdesert.com`
+`sa`                      | `blackdesert-tradeweb.playredfox.com`
+
 ## endpoints
 
 1. [get item by id](#itemid)
