@@ -42,7 +42,7 @@ module PriceEndpoints
     }.to_json
   end
 
-  def self.price_list_by_id_and_name
+  def self.price_list_by_id
     lambda do |req|
       item_id = req[:vars]['id']
       uri = URI "#{Constants::ROOT_URL}#{Constants::MARKET_SELL_BUY_INFO}"
@@ -53,10 +53,10 @@ module PriceEndpoints
     end
   end
 
-  GET_PRICE_LIST_BY_ID_AND_NAME = {
+  GET_PRICE_LIST_BY_ID = {
     method: 'get',
     path: '/prices/:id',
-    responder: price_list_by_id_and_name,
+    responder: price_list_by_id,
     opts: { content_type: 'application/json' }
   }.values.freeze
 end

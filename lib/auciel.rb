@@ -32,7 +32,7 @@ class Auciel
     @server.register(*SearchEndpoints::SEARCH_ITEM_BY_TEXT)
 
     # /prices/:id
-    @server.register(*PriceEndpoints::GET_PRICE_LIST_BY_ID_AND_NAME)
+    @server.register(*PriceEndpoints::GET_PRICE_LIST_BY_ID)
 
     # /hot
     @server.register(*HotEndpoints::GET_HOT_ITEMS_LIST)
