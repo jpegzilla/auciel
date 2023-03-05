@@ -48,4 +48,15 @@ class Auciel
   rescue Interrupt
     puts '[auciel] shutting down.'
   end
+
+  def all_endpoints
+    {
+      get_item_by_id: ItemEndpoints::GET_ITEM_BY_ID,
+      get_item_by_category: ItemEndpoints::GET_ITEM_BY_CATEGORY,
+      search_item_by_text: SearchEndpoints::SEARCH_ITEM_BY_TEXT,
+      get_price_list_by_id: PriceEndpoints::GET_PRICE_LIST_BY_ID,
+      get_hot_items_list: HotEndpoints::GET_HOT_ITEMS_LIST,
+      get_waitlist_items: WaitlistEndpoints::GET_WAITLIST_ITEMS
+    }
+  end
 end
